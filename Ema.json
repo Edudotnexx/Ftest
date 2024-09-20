@@ -1,0 +1,58 @@
+{
+  
+  "outbounds": [
+       {
+      "type": "xray",
+      "tag": "Fastly § 0",
+      "xray_outbound_raw": {
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "199.232.5.185",
+              "port": 443,
+              "users": [
+                {
+                  "encryption": "none",
+                  "flow": "",
+                  "id": "89b3cbba-e6ac-485a-9481-976a0415eab9"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "allowInsecure": true,
+            "alpn": [
+              "http/1.1"
+            ],
+            "fingerprint": "randomized",
+            "rejectUnknownSni": false,
+            "serverName": "tamin80.ir"
+          },
+          "wsSettings": {
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+            },
+            "host": "tamin80.ir",
+            "path": "/H?ed=2560"
+          }
+        },
+        "tag": "Fastly"
+      },
+      "xray_fragment": {
+        "packets": "tlshello",
+        "length": "20-40",
+        "interval": "2-4",
+        "host1_header": "",
+        "host1_domain": "",
+        "host2_header": "",
+        "host2_domain": ""
+      },
+      "xray_loglevel": ""
+    },
+    }]
+}
